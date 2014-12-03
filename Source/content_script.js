@@ -36,6 +36,11 @@ function handleText(textNode)
 	v = v.replace(/\bthe Cloud\b/g, "my Butt");
 	v = v.replace(/\bthe cloud\b/g, "my butt");
 	
+	v = v.replace(/\bSJW(s?)\b/ig, "skeleton$1");
+	v = v.replace(/\bsocjus\b/ig, "skeletonism");
+	v = v.replace(/\b(a)n (SJWs?)\b/ig, "$1 $2");
+	v = v.replace(/\b(s)ocial justice (warriors?)/ig, "$1keleton $2");
+	
 	textNode.nodeValue = v;
 }
 
